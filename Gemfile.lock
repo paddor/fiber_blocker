@@ -1,0 +1,38 @@
+PATH
+  remote: .
+  specs:
+    fiber_blocker (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    async (2.8.0)
+      console (~> 1.10)
+      fiber-annotation
+      io-event (~> 1.1)
+      timers (~> 4.1)
+    console (1.23.3)
+      fiber-annotation
+      fiber-local
+    fiber-annotation (0.2.0)
+    fiber-local (1.0.0)
+    io-event (1.4.0)
+    minitest (5.20.0)
+    rake (13.1.0)
+    rake-compiler (1.2.5)
+      rake
+    timers (4.3.5)
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  async
+  fiber_blocker!
+  minitest (~> 5.16)
+  rake (~> 13.0)
+  rake-compiler
+
+BUNDLED WITH
+   2.5.3
