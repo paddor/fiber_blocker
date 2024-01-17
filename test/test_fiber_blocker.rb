@@ -41,8 +41,8 @@ class TestFiberBlocker < Minitest::Test
       puts "T1 BEGIN"
 
       # FIXME: BUG (Segfault or "fatal: machine stack overflow in critical region")
-      # FiberBlocker.block_fiber("test", 2)
-      FiberBlocker.block_fiber2(scheduler, "test", 2) # this works
+      FiberBlocker.block_fiber("test", 2)
+      # FiberBlocker.block_fiber2(scheduler, "test", 2) # this works
 
       puts "T1 END"
     end
